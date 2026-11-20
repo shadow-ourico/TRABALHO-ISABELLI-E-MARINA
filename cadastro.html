@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARGINALIA | Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="cadastro-header">
+        <h1>MARGINALIA</h1>
+        <p>Toda história deixa uma marca.</p>
+    </header>
+
+    <main>
+        <section id="cadastro">
+
+            <h2>Crie sua conta.</h2>
+
+            <p>Faça seu cadastro e faça parte da MARGINALIA.</p>
+
+            <form>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+
+                <label for="preferencia">Preferência de produtos:</label>
+                <select id="preferencia" name="preferencia" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="livros">Livros</option>
+                    <option value="quadrinhos">Quadrinhos</option>
+                    <option value="mangas">Mangás</option>
+                    <option value="todos">Todos</option>
+                </select>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+
+            <p class="voltar">
+                <a href="index.html">Voltar para a página inicial</a>
+            </p>
+
+        </section>
+    </main>
+
+</body>
+</html>

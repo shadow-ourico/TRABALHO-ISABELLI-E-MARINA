@@ -1,0 +1,336 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: #241719;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Italianno", cursive;
+    color: #e5d8c3;
+}
+
+header p {
+    font-style: italic;
+    color: #a99b89;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    background-color: #171312;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: #d8ccba;
+    font-size: 20px;
+    font-family: 'Gill Sans';
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #8b3030;
+    text-decoration: line-through;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 100%;
+    min-height: 300vh;
+    background-color: #171312;
+    color: #d8ccba;
+}
+
+main section {
+    border-bottom: solid 1px #3a302c;
+    min-height: 100vh;
+    padding: 80px 10%;
+}
+
+main section h2 {
+    font-family: "Henny Penny", system-ui;
+    font-size: 42px;
+    color: #e5d8c3;
+    margin-bottom: 15px;
+}
+
+main section p {
+    color: #a99b89;
+    font-family: 'Gill Sans';
+    font-size: 17px;
+}
+
+/* FORMULÁRIOS */
+main section label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    color: #bfaf9a;
+    font-family: 'Gill Sans';
+    font-size: 15px;
+}
+
+main section input,
+main section select {
+    width: 300px;
+    height: 38px;
+    background-color: #211c1a;
+    color: #d8ccba;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-family: 'Gill Sans';
+    font-size: 15px;
+}
+
+main section input:focus,
+main section select:focus {
+    outline: none;
+    border-color: #8b3030;
+}
+
+main section button {
+    margin-top: 30px;
+    padding: 12px 28px;
+    background-color: #4a2020;
+    color: #e5d8c3;
+    border: 1px solid #79504a;
+    border-radius: 2px;
+    font-family: 'Gill Sans';
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main section button:hover {
+    background-color: #6b2525;
+}
+
+/* RODAPÉ */
+footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 180px;
+    background-color: #110f0e;
+    color: #b9a99a;
+    text-align: center;
+    padding: 45px 20px 25px;
+    border-top: 1px solid #66594d;
+}
+
+footer h2 {
+    color: #e5d8c3;
+    font-family: "Italianno", cursive;
+    font-size: 25px;
+    margin: 0 0 10px;
+}
+
+footer p {
+    color: #b9a99a;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+footer .footer-linha {
+    width: 80%;
+    max-width: 500px;
+    height: 1px;
+    background-color: #3a302c;
+    margin: 25px auto;
+}
+
+footer .copyright {
+    color: #766b61;
+    font-size: 12px;
+}
+
+/* CONTATOS */
+#contatos {
+    position: relative;
+}
+
+#contatos .contato-info {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: #211c1a;
+    border: 1px solid #66594d;
+    max-width: 600px;
+}
+
+#contatos .contato-info p {
+    margin-bottom: 18px;
+}
+
+#contatos .contato-info p:last-child {
+    margin-bottom: 0;
+}
+
+#contatos .contato-info strong {
+    color: #e5d8c3;
+}
+
+/* CATÁLOGO */
+.catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 55px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.livro {
+    width: 190px;
+    text-align: left;
+    padding: 14px;
+    border: 1px solid #3a302c;
+    border-radius: 10px;
+    background-color: #211c1a;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.livro:hover {
+    border-color: #79504a;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.livro img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    border-radius: 7px;
+    transition: transform 0.35s ease;
+}
+
+.livro:hover img {
+    transform: scale(1.035);
+}
+
+.livro h3 {
+    font-family: "Italianno", cursive;
+    font-size: 29px;
+    text-transform: none;
+    letter-spacing: 0;
+    margin: 14px 0 2px;
+    color: #e5d8c3;
+}
+
+.livro .autor {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+    margin: 0 0 10px;
+    color: #a99b89;
+}
+
+.livro .preco {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 16px;
+    margin: 0 0 12px;
+    color: #c58b79;
+    font-weight: bold;
+}
+
+.livro .descricao {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    color: #a99b89;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.livro:hover .descricao {
+    opacity: 1;
+    max-height: 80px;
+}
+
+.livro .btn-comprar {
+    width: 100%;
+    margin: 0 0 12px;
+    padding: 9px;
+    background-color: #4a2020;
+    color: #e5d8c3;
+    border: 1px solid #79504a;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.livro .btn-comprar:hover {
+    background-color: #6b2525;
+}
+
+
+/* PÁGINA DE CADASTRO */
+
+#cadastro-header {
+    height: 35vh;
+}
+
+#cadastro {
+    min-height: 100vh;
+}
+
+#cadastro form {
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+#cadastro label {
+    display: block;
+    margin-top: 18px;
+}
+
+#cadastro input,
+#cadastro select {
+    display: block;
+    width: 100%;
+    height: 42px;
+    margin-bottom: 10px;
+}
+
+#cadastro button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+#cadastro .voltar {
+    margin-top: 25px;
+}
+
+#cadastro .voltar a {
+    color: #c58b79;
+    text-decoration: none;
+}
+
+#cadastro .voltar a:hover {
+    color: #e5d8c3;
+    text-decoration: underline;
+}
